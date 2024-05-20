@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add/Remove Item</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="food.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navigation bar in left side -->
+
+      <div class="nav-container">
+        <a href="index.html"
+          ><img src="Images\logo.png" alt="logo" width="130" height="130"
+        /></a>
+        <aside class="navigation">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="wishlist.html">Whishlists</a></li>
+            <li><a href="#">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Checkout</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- header -->
+      <div class="header">
+        <header>
+          <div type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </div>
+          <div type="button"><i class="fa-solid fa-tags"></i>Offers</div>
+          <div type="button">
+            <a href="wishlist.html"
+              ><i class="fa-solid fa-heart"></i
+              ><span id="wishlist-count"></span>Items</a
+            >
+          </div>
+          <div type="button">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span id="cart-count"></span>Items</a
+            >
+          </div>
+        </header>
+
+        <main>
+          <h2
+            style="
+              color: rgb(207, 30, 89);
+              margin: 50px 0 35px 0;
+              font-family: Arial, Helvetica, sans-serif;
+            "
+          >
+            Items Added in Cart
+          </h2>
+          <table id="cart-items">
+            <thead>
+              <th>Item</th>
+              <th>Name</th>
+              <th></th>
+            </thead>
+            <tbody id="tbdy"></tbody>
+          </table>
+        </main>
+      </div>
+
+      <!-- Right Sidebar -->
+
+      <aside class="sidebar" style="flex-grow: 8">
+        <div class="inner-wrapper">
+          <button type="button"><i class="fa-solid fa-user"></i>Amaresh</button>
+        </div>
+
+        <div id="order-summary">
+          <h1
+            style="font-family: Arial, Helvetica, sans-serif; font-size: 18px"
+          >
+            Order summary
+          </h1>
+          <table id="order-items">
+            <tbody id="order-bdy"></tbody>
+          </table>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Online Food Store</p>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/8179359cd1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script type="module" src="food.mjs"></script> -->
+
+    <!-- Other food items -->
+    <script type="module" src="main.mjs"></script>
+    <script type="module" src="right-side-barbtn.mjs"></script>
+    <!-- <script type="module" src="wishlist-display.mjs"></script> -->
+
+    <script type="module" src="cart-display.mjs"></script>
+    <!-- <script type="module" src="wishlist-display.mjs"></script> -->
+  </body>
+</html>

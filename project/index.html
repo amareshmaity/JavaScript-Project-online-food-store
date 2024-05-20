@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add/Remove Item</title>
+
+    <!-- CSS link -->
+    <link rel="stylesheet" href="food.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navigation bar in left side -->
+
+      <div class="nav-container">
+        <a href="index.html"
+          ><img src="Images\logo.png" alt="logo" width="130" height="130"
+        /></a>
+        <aside class="navigation">
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Your Orders</a></li>
+            <li><a href="wishlist.html">Whishlists</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Checkout</a></li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- header -->
+      <div class="header">
+        <header>
+          <div type="button">
+            <i class="fa-solid fa-magnifying-glass"></i>Search
+          </div>
+          <div type="button"><i class="fa-solid fa-tags"></i>Offers</div>
+          <div type="button">
+            <a href="wishlist.html"
+              ><i class="fa-solid fa-heart"></i
+              ><span id="wishlist-count"></span>Items</a
+            >
+          </div>
+          <div type="button">
+            <a href="cart.html"
+              ><i class="fa-solid fa-cart-shopping"></i
+              ><span id="cart-count"></span>Items</a
+            >
+          </div>
+        </header>
+
+        <main id="food-container"></main>
+      </div>
+
+      <!-- Right Sidebar -->
+
+      <aside class="sidebar" style="flex-grow: 8">
+        <div class="inner-wrapper">
+          <button type="button"><i class="fa-solid fa-user"></i>Amaresh</button>
+
+          <h2 class="yatra-one-regular">
+            Go For Hunt
+            <hr />
+          </h2>
+
+          <ul>
+            <li class="list">
+              <div class="circular-portrait">
+                <img
+                  src="Images\biriyani\b1.jpg"
+                  alt="Image 1"
+                  width="50"
+                  height="50"
+                />
+              </div>
+
+              <p>Biriyani</p>
+            </li>
+            <li class="list">
+              <div class="circular-portrait">
+                <img
+                  src="Images\chicken\c1.jpg"
+                  alt="Image 2"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <p>Chicken</p>
+            </li>
+            <li class="list">
+              <div class="circular-portrait">
+                <img
+                  src="Images\paneer\p1.jpg"
+                  alt="Image 3"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <p>Paneer</p>
+            </li>
+            <li class="list">
+              <div class="circular-portrait">
+                <img
+                  src="Images\vegetable\v1.jpg"
+                  alt="Image 4"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <p>Vegetables</p>
+            </li>
+            <li class="list">
+              <div class="circular-portrait">
+                <img
+                  src="Images\chinese\ch1.jpg"
+                  alt="Image 5"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <p>Chinese</p>
+            </li>
+            <li class="list">
+              <div class="circular-portrait">
+                <img
+                  src="Images\southIndian\s1.jpg"
+                  alt="Image 3"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <p>South Indian</p>
+            </li>
+            <li class="list">
+              <div class="circular-portrait">
+                <img
+                  src="Images\pizza\p1.jpg"
+                  alt="Image 7"
+                  width="50"
+                  height="50"
+                />
+              </div>
+              <p>Pizza</p>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      <div class="footer-container">
+        <p>&copy; 2024 Online Food Store</p>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/8179359cd1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script type="module" src="food.mjs"></script>
+
+    <!-- Other food items -->
+    <script type="module" src="main.mjs"></script>
+    <script type="module" src="right-side-barbtn.mjs"></script>
+    <!-- <script type="module" src="wishlist-display.mjs"></script> -->
+  </body>
+</html>
